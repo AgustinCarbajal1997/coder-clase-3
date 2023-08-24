@@ -4,11 +4,11 @@ import styles from "./styles";
 
 const Button = () => {
   return (
-    <TouchableOpacity activeOpacity={0.8}>
-      <View style={styles.buttonContainer}>
+    <View style={styles.buttonContainer}>
+      <TouchableOpacity activeOpacity={0.8}>
         <Text style={styles.buttonText}>Agregar</Text>
-      </View>
-    </TouchableOpacity>
+      </TouchableOpacity>
+    </View>
   );
 };
 

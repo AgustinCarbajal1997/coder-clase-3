@@ -8,8 +8,10 @@ const styles = StyleSheet.create({
     rowGap: 20,
   },
   containerAddItem: {
+    width: "100%",
     flexDirection: "row",
     gap: 10,
+    flex: 1,
   },
 });
 

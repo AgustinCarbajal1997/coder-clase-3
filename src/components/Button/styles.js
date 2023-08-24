@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
     backgroundColor: "darkred",
     borderRadius: 10,
     padding: 10,
+    height: 40,
   },
   buttonText: {
     color: "white",
