@@ -17,9 +17,6 @@ const List = ({ data, selectPlace }) => {
             <Item data={item} selectPlace={selectPlace} />
           )}
         />
-        {/* {data.map((item) => (
-          <Item data={item} key={item.id} />
-        ))} */}
       </View>
     </View>
   );
