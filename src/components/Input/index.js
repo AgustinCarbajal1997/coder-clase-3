@@ -9,6 +9,7 @@ const Input = ({ onChangeText, value }) => {
         style={styles.input}
         value={value}
         onChangeText={(text) => onChangeText(text)}
+        //secureTextEntry={true}
       />
     </View>
   );
