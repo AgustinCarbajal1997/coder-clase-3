@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import THEME from "../../utils/themes";
 
 const styles = StyleSheet.create({
   container: {
@@ -6,6 +7,12 @@ const styles = StyleSheet.create({
     paddingVertical: 50,
     paddingHorizontal: 10,
     rowGap: 20,
+  },
+  lightmode: {
+    backgroundColor: THEME.mode.lightmode,
+  },
+  darkmode: {
+    backgroundColor: THEME.mode.darkmode,
   },
   containerAddItem: {
     width: "100%",

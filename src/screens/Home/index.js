@@ -5,12 +5,14 @@ import Input from "../../components/Input";
 import Button from "../../components/Button";
 import List from "../../components/List";
 import Modal from "../../components/ModalConfirmation";
+import Header from "../../components/Header";
 
 const Home = () => {
   const [input, setInput] = useState("");
   const [places, setPlaces] = useState([]);
   const [selectedPlace, setSelectedPlace] = useState(null);
   const [modalVisible, setModalVisible] = useState(false);
+  const [mode, setMode] = useState("lightmode");
 
   const addNewPlace = () => {
     if (input === "") return;
@@ -30,10 +32,17 @@ const Home = () => {
     setModalVisible(true);
   };
 
+  const changeMode = () => {
+    setMode(mode === "lightmode" ? "darkmode" : "lightmode");
+  };
+
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, styles[mode]]}>
+      <View>
+        <Header mode={mode} changeMode={changeMode} />
+      </View>
       <View style={styles.containerAddItem}>
-        <Input onChangeText={setInput} value={input} />
+        <Input onChangeText={setInput} value={input} mode={mode} />
         <Button onPress={addNewPlace} />
       </View>
       <View>

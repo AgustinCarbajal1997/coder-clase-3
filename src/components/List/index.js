@@ -6,9 +6,6 @@ import styles from "./styles";
 const List = ({ data, selectPlace }) => {
   return (
     <View style={styles.listSection}>
-      <View style={styles.titleContainer}>
-        <Text style={styles.titleText}>Lista de paquetes de viaje</Text>
-      </View>
       <View>
         <FlatList
           data={data}

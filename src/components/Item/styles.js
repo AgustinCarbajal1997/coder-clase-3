@@ -1,8 +1,10 @@
 import { StyleSheet } from "react-native";
+import THEME from "../../utils/themes";
 
 const styles = StyleSheet.create({
   itemContainer: {
-    borderColor: "black",
+    borderColor: THEME.colors.lightpink,
+    backgroundColor: THEME.colors.lightpink,
     borderWidth: 1,
     borderRadius: 10,
     height: 40,
@@ -11,7 +13,9 @@ const styles = StyleSheet.create({
     marginVertical: 5,
   },
   itemText: {
-    color: "black",
+    color: THEME.colors.black,
+    fontSize: THEME.fontSize.subheading,
+    fontWeight: THEME.fontWeight.mainRegular,
   },
 });
 
