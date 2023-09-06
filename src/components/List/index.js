@@ -3,16 +3,14 @@ import React from "react";
 import Item from "../Item";
 import styles from "./styles";
 
-const List = ({ data, selectPlace }) => {
+const List = ({ data }) => {
   return (
     <View style={styles.listSection}>
       <View>
         <FlatList
           data={data}
           keyExtractor={(item) => item.id}
-          renderItem={({ item }) => (
-            <Item data={item} selectPlace={selectPlace} />
-          )}
+          renderItem={({ item }) => <Item data={item} />}
         />
       </View>
     </View>

@@ -1,9 +1,9 @@
-import { View, TextInput } from "react-native";
+import { View, TextInput, TouchableWithoutFeedback } from "react-native";
 import React from "react";
 import styles from "./styles";
 import THEME from "../../utils/themes";
-
-const Input = ({ onChangeText, value, mode }) => {
+import { AntDesign } from "@expo/vector-icons";
+const Input = ({ onChangeText, value, mode, onPress }) => {
   return (
     <View style={styles.inputContainer}>
       <TextInput
@@ -13,6 +13,14 @@ const Input = ({ onChangeText, value, mode }) => {
         cursorColor={THEME.colors.mediumBlue}
         //secureTextEntry={true}
       />
+      <TouchableWithoutFeedback onPress={onPress}>
+        <AntDesign
+          name="closecircleo"
+          size={24}
+          color={THEME.colors.mediumBlue}
+          style={styles.inputButton}
+        />
+      </TouchableWithoutFeedback>
     </View>
   );
 };
