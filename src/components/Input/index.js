@@ -10,7 +10,7 @@ const Input = ({ onChangeText, value, mode }) => {
         style={[styles.input, styles[mode]]}
         value={value}
         onChangeText={(text) => onChangeText(text)}
-        cursorColor={THEME.colors.darkred}
+        cursorColor={THEME.colors.mediumBlue}
         //secureTextEntry={true}
       />
     </View>

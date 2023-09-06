@@ -25,7 +25,7 @@ const THEME = {
     josefinRegular: "JosefinRegular",
   },
   fontSize: {
-    heading: 25,
+    heading: 30,
     subheading: 16,
     title: 13,
     description: 10,
