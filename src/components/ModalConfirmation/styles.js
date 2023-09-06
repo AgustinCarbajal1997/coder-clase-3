@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import THEME from "../../utils/themes";
 
 const styles = StyleSheet.create({
   centeredView: {
@@ -28,11 +29,11 @@ const styles = StyleSheet.create({
     elevation: 2,
   },
   buttonClose: {
-    backgroundColor: "darkred",
+    backgroundColor: THEME.colors.mediumBlue,
   },
   textStyle: {
     color: "white",
-    fontWeight: "bold",
+    fontWeight: "500",
     textAlign: "center",
   },
   modalTextTitle: {

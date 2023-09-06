@@ -3,8 +3,8 @@ import THEME from "../../utils/themes";
 
 const styles = StyleSheet.create({
   itemContainer: {
-    borderColor: THEME.colors.lightpink,
-    backgroundColor: THEME.colors.lightpink,
+    borderColor: THEME.colors.mediumBlue,
+    backgroundColor: THEME.colors.mediumBlue,
     borderWidth: 1,
     borderRadius: 10,
     height: 40,
@@ -13,9 +13,9 @@ const styles = StyleSheet.create({
     marginVertical: 5,
   },
   itemText: {
-    color: THEME.colors.black,
+    color: THEME.colors.white,
     fontSize: THEME.fontSize.subheading,
-    fontWeight: THEME.fontWeight.mainRegular,
+    fontFamily: THEME.fontFamily.josefinRegular,
   },
 });
 

@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { Dimensions, StyleSheet } from "react-native";
 import THEME from "../../utils/themes";
 
 const styles = StyleSheet.create({
@@ -8,16 +8,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     rowGap: 20,
   },
-  lightmode: {
-    backgroundColor: THEME.mode.lightmode,
-  },
-  darkmode: {
-    backgroundColor: THEME.mode.darkmode,
-  },
-  containerAddItem: {
-    width: "100%",
-    flexDirection: "row",
-    gap: 10,
+  image: {
+    width: Dimensions.get("screen").width,
+    aspectRatio: 1 / 1,
   },
 });
 

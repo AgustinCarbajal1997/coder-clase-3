@@ -6,7 +6,7 @@ const Button = ({ onPress }) => {
   return (
     <View style={styles.buttonContainer}>
       <TouchableOpacity activeOpacity={0.8} onPress={onPress}>
-        <Text style={styles.buttonText}>Agregar</Text>
+        <Text style={styles.buttonText}>Buscar</Text>
       </TouchableOpacity>
     </View>
   );
