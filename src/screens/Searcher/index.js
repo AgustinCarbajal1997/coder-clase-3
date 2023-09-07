@@ -1,4 +1,4 @@
-import { View } from "react-native";
+import { ScrollView, View } from "react-native";
 import React, { useState } from "react";
 import styles from "./styles";
 import Input from "../../components/Input";
@@ -37,7 +37,7 @@ const Searcher = ({ mode }) => {
         />
         <Button onPress={searchPlace} />
       </View>
-      <View>
+      <View style={{ flex: 1 }}>
         <List data={places} />
       </View>
     </View>

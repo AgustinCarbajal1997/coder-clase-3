@@ -1,9 +1,6 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  listSection: {
-    rowGap: 10,
-  },
   titleContainer: {
     height: 30,
   },

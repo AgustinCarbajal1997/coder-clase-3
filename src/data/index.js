@@ -12,5 +12,7 @@ const DATA = [
   { id: 8, name: "Cancún" },
   { id: 9, name: "Miami" },
   { id: 10, name: "Ibiza" },
+  { id: 11, name: "Mar del Plata" },
+  { id: 12, name: "Buenos Aires" },
 ];
 export default DATA;

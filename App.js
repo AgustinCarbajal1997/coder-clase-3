@@ -1,8 +1,8 @@
 import { View } from "react-native";
 import Home from "./src/screens/Home";
 import Searcher from "./src/screens/Searcher";
-import { useState } from "react";
 import Header from "./src/components/Header";
+import { useState } from "react";
 import { useFonts } from "expo-font";
 import { FONTS } from "./src/utils/fonts";
 
