@@ -1,16 +1,19 @@
-import { Dimensions, StyleSheet } from "react-native";
-import THEME from "../../utils/themes";
+import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingVertical: 50,
     paddingHorizontal: 10,
-    rowGap: 20,
   },
-  image: {
-    width: Dimensions.get("screen").width,
+  imagePortrait: {
+    width: "90%",
     aspectRatio: 1 / 1,
+    alignSelf: "center",
+  },
+  imageLanscape: {
+    width: 220,
+    aspectRatio: 1 / 1,
+    alignSelf: "center",
   },
 });
 

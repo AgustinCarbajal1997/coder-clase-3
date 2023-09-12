@@ -3,7 +3,7 @@
     "name": "my-app-coder-clase-3",
     "slug": "my-app-coder-clase-3",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
