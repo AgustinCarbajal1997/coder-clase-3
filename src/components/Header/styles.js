@@ -4,7 +4,6 @@ import THEME from "../../utils/themes";
 const styles = StyleSheet.create({
   container: {
     backgroundColor: THEME.colors.darkBlue,
-    marginTop: 50,
     paddingTop: 20,
     flexDirection: "column",
   },
