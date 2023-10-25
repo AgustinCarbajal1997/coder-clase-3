@@ -2,17 +2,20 @@ import { StyleSheet } from "react-native";
 import THEME from "../../utils/themes";
 
 const styles = StyleSheet.create({
-  buttonContainer: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+  itemContainer: {
+    borderColor: THEME.colors.mediumBlue,
     backgroundColor: THEME.colors.mediumBlue,
+    borderWidth: 1,
     borderRadius: 10,
-    padding: 10,
     height: 40,
+    justifyContent: "center",
+    paddingHorizontal: 10,
+    marginVertical: 5,
   },
-  buttonText: {
+  itemText: {
     color: THEME.colors.white,
+    fontSize: THEME.fontSize.subheading,
+    fontFamily: THEME.fontFamily.josefinRegular,
   },
 });
 

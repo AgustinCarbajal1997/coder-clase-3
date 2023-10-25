@@ -1,17 +1,36 @@
 import { StyleSheet } from "react-native";
+import THEME from "../../utils/themes";
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingVertical: 50,
     paddingHorizontal: 10,
-    rowGap: 20,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: THEME.colors.white,
   },
-  containerAddItem: {
-    width: "100%",
-    flexDirection: "row",
-    gap: 10,
-    flex: 1,
+  imagePortrait: {
+    width: "90%",
+    aspectRatio: 1 / 1,
+    alignSelf: "center",
+  },
+  imageLanscape: {
+    width: 220,
+    aspectRatio: 1 / 1,
+    alignSelf: "center",
+  },
+  buttonContainer: {
+    alignSelf: "center",
+    paddingVertical: 20,
+    paddingHorizontal: 20,
+    marginTop: 20,
+    backgroundColor: THEME.colors.darkBlue,
+    borderRadius: 15,
+  },
+  buttonText: {
+    color: THEME.colors.white,
+    fontSize: 15,
+    fontFamily: THEME.fontFamily.josefinBold,
   },
 });
 
